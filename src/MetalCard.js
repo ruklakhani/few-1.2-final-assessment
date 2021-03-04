@@ -1,6 +1,7 @@
 // src/MetalCard.js
 
 import React from 'react'
+import Likes from './Likes.js'
 import './MetalCard.css'
 
 function MetalCard(cards) {
@@ -19,6 +20,11 @@ function MetalCard(cards) {
                 <br></br>
                 styles: {style}
                 <br></br>
+                {split === "-" ? (
+                    <Likes />
+                ) : (
+                    <div></div>
+                )}
             </div>
         </div>
     )
